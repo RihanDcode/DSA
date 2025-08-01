@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Traversing and Accessing</title>
+
+</head>
+        <script>
+            // ACCESSING CODE :-
+            //We are using an ARRAY stored in let variblesto hold multiple values. 
+            // When the user click an input button, the program check certain conditions
+            // using if-else and based on that it ACCESSES and displays specific data from ARRAY,
+            let data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            function getElement() {
+                let el = document.getElementById('element').value
+                if (el < data.length) {
+                    alert(data[el]);
+                } else {
+                    alert("Plase Enter Valid Number");
+
+                }
+            }
+            let el = document.getElementById('element').velue
+            if (el < data.length) {
+
+            } else {
+
+            }
+
+
+            //Create an array with numbers from 1 to 10
+            let newdata = [1,2,3,4,5,6,7,8,9,10];
+            //Declear a varible 'x'and assing it the value 2
+            let x = 2;
+            //Access the value at index 2 of the array and display it on the web page,
+            //Since arrays start from index 0, index 2 means the third element, which is 3
+            document.write(newdata[x]);
+        
+
+
+            // TRAVERSE CODE :-
+            //the code uses a for loop to traverse (move through) each element os an ARRAY one by one. 
+            //This allows the program to access and prossibly perform operation on each item stored in the ARRAY.
+            //Traversing is a common and basic technique use to read or manipulate data in an ARRAY, 
+            let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            for (let i = 0; i < a.length; i++) 
+            {
+              document.write(`<br> Array index number ${i} is ${a[i]}<br>`);
+            }
+            
+        </script>
+
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">Enter Index Number</button>
+    
+</body>
+
+</html>
