@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert in array</title>
+</head>
+        <script>
+             //insert in array with basic code and using for loop
+             let element = [1,2,4,5,6,7,8,9,10]
+             let newelement = 3;
+             let position = 2
+             for(let i = element.length-1; i > 0; --i)
+             {
+                if(i>=position)
+                {
+                     element[i+1]=element[i];
+                     if(i==position)
+                     {
+                         element[i]=newelement;
+                     }
+                }
+             }console.warn(element);
+
+
+
+
+            // insert in array with using with button and input and for loop
+            let data = [1, 2, 4, 5, 6, 7, 8, 9, 10]
+                function el()
+                { 
+                    let newdata = document.getElementById('Val').value
+                    let position = document.getElementById('position').value
+                    Val = parseInt(Val)
+                   for (let i = data.length - 1; i > 0; --i) {
+                    if (i >= position) {
+                        data[i + 1] = data[i];
+                        if (i == position) {
+                            data[i] = newdata;
+                        }
+                    }
+                } console.warn(data);
+            }
+
+        </script>
+<body>
+    <input type="text" id="Val" placeholder="new data"/>
+    <input type="text" id="position" placeholder="position"/>
+    <button onclick="el()">Insert</button>
+    
+</body>
+</html>
